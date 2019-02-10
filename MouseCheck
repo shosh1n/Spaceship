@@ -1,0 +1,25 @@
+class MouseCheck
+{
+  Vector _xy;
+  
+    
+   MouseCheck()
+   {
+    
+   }
+    
+  Vector trackMouse()
+  {
+    Vector xy = new Vector(mouseX,mouseY);
+    return xy;
+    
+  }
+  
+  void mousePos()
+  {
+    System.out.print(trackMouse()._x);
+    System.out.print(trackMouse()._y);
+  }
+  
+  
+}
