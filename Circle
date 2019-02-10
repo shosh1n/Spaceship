@@ -1,0 +1,17 @@
+class Circle extends Object2D
+{
+  Vector _center;
+  float  _radius;
+  
+  Circle(Vector center, float radius)
+  {
+    _center =  center;
+    _radius =  radius;  
+  }
+  
+  void render()
+  {
+    ellipse(_center._x , _center._y, _radius, _radius);
+  }
+  
+}
