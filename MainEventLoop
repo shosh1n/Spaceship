@@ -1,0 +1,44 @@
+Vector pointA;
+Vector pointB;
+Vector pointC;
+Vector pointD;
+Triangle tri;
+Rectangle rect;
+
+MouseCheck mouse;
+void setup()
+{
+  size(1280, 960 );
+  background(200);
+ 
+ /* 
+  Vector pointA = new Vector(200,300);
+  Vector pointB = new Vector(400,600);
+  
+  Vector pointC  = new Vector(800,450);
+  Vector pointD  = new Vector(600,300);
+  
+  fill(255,0,0);
+  ellipse(pointA._x, pointA._y, 20, 20);
+  fill(255,255,0);
+  ellipse(pointB._x, pointB._y, 20, 20);
+
+  fill(100,100,100);
+  ellipse(pointC._x, pointC._y, 20, 20);
+
+  
+  tri = new Triangle(pointA, pointB, pointC);
+  tri.render();
+  System.out.print(tri._directAB._x + " " + tri._directAB._y);
+  mouse = new MouseCheck();
+  
+  rect = new Rectangle(pointA, pointB, pointC, pointD);
+  */
+  
+}
+
+void draw()
+{
+
+  
+}
