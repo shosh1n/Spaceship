@@ -1,0 +1,38 @@
+class Triangle extends Object2D
+{
+  //Ortsvektoren
+  Vector _pointA;
+  Vector _pointB;
+  Vector _pointC;
+  
+  //Richtungsvektoren
+  Vector _directAB;
+  Vector _directAC;
+  
+  public Triangle(Vector pointA, Vector pointB, Vector pointC)
+  {
+    _pointA = pointA;
+    _pointB = pointB;
+    _pointC = pointC;
+    
+    _directAB = pointB.vectorDiff(pointA);
+    _directAC = pointC.vectorDiff(pointA);
+  }
+  
+  
+  
+  void render()
+  {
+   
+    line(_pointB._x , _pointB._y , _pointA._x , _pointA._y);
+    line(_pointC._x , _pointC._y , _pointA._x , _pointA._y);
+    line(_pointC._x , _pointC._y , _pointB._x , _pointB._y);
+  }
+  
+  
+  /*alle Punkte der Ebene des Dreiecks lassen sich so beschreiben: p(ß,µ) = a + ß*(b - a) + µ*(c-a)
+    0.0 <= ß <= 1.0  0.0<=µ<=1.0  ß+µ <= 1
+    */
+  
+  
+}
