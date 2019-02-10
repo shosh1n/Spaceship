@@ -1,0 +1,26 @@
+class Rectangle extends Object2D
+{
+   Vector _pointA;
+   Vector _pointB;
+   Vector _pointC;
+   Vector _pointD;
+   
+   Rectangle(Vector pointA, Vector pointB, Vector pointC, Vector pointD)
+   {
+     _pointA = pointA;
+     _pointB = pointB;
+     _pointC = pointC;
+     _pointD = pointD;
+   }
+   
+     void render()
+  {
+   
+    line(_pointA._x , _pointA._y , _pointB._x , _pointB._y);
+    line(_pointB._x , _pointB._y , _pointC._x , _pointC._y);
+    line(_pointC._x , _pointC._y , _pointD._x , _pointD._y);
+    line(_pointD._x , _pointD._y , _pointA._x , _pointA._y);
+  }
+   
+   
+}
