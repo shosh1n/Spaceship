@@ -1,0 +1,15 @@
+abstract class ObjectCreation
+{
+  
+  public Object2D sendObject(String Object)
+  {
+   Object2D object = create(Object);
+   
+   object.render();
+    
+    return object;
+  }
+  
+  protected abstract Object2D  create(String element);
+  
+}
