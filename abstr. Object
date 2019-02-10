@@ -1,0 +1,10 @@
+abstract class Object2D
+{
+  Vector _pointA;
+  Vector _pointB;
+  Vector _pointC;
+  
+
+  abstract void render();
+
+}
