@@ -1,0 +1,35 @@
+class MonoGon extends Triangle 
+{
+  ArrayList<Vector> Coordinates = new ArrayList<Vector>();
+  Triangle _triA;
+  Triangle _triB;
+  Triangle _triC;
+  
+  
+
+  MonoGon(Triangle triA, Triangle triB, Triangle triC)
+    {
+      
+     init();
+    }
+  
+  Vector Position()
+  {
+    
+    
+    
+    
+    return _position
+  }
+  
+  void init()
+  {
+    for (int i = 0; i < 18)
+      {
+        Coordinates
+      }
+    
+  }
+  
+  
+}
