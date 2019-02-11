@@ -2,11 +2,13 @@ class Vector
 {
   float _x;
   float _y;
+  float _z;
   
-  Vector(float x, float y)
+  Vector(float x, float y, float z)
   {
     _x = x;
     _y = y;
+    _z = z;
   }
   
   Vector vectorAdd(Vector another)
@@ -15,6 +17,7 @@ class Vector
     add = clone();
     add._x += another._x;
     add._y += another._y;
+    add._z += another._z;
     
     return add;
   }
@@ -25,6 +28,7 @@ class Vector
    diff = clone();
    diff._x -= another._x;
    diff._y -= another._y;
+   diff._z -= another._z;
    return diff;
   }
   
@@ -32,6 +36,11 @@ class Vector
   Vector clone()
   {
     Vector clone;
-    clone = new Vector(this._x, this._y);
+    clone = new Vector(this._x, this._y, this._z);
     return clone;
   }
+  
+  
+  
+  
+}
